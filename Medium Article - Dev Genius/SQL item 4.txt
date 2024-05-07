@@ -1,0 +1,5 @@
+4. Explain the difference between correlated subqueries and non-correlated subqueries in SQL. Provide examples of each scenario and discuss the performance implications of using correlated subqueries.
+
+A subquery is a query that's usually nested in another, outer query. A correlated subquery references a value in the outer query and, thus, must be reran for every row in the query. Correlated subqueries can be computationally expensive. Non-correlated subqueries do not reference the outer query and are only ran once.
+
+You should try to avoid correlated subqueries by leveraging joins and window functions.
